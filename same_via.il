@@ -53,7 +53,7 @@ defun(same_via ()
 	)
 	
 	close(port)
-	axlUIWExpose(axlUIViewFileCreate("file", "Same Via Processing" t))
+	axlUIWExpose(axlUIViewFileCreate(file "Same Via Processing" t))
 
 )
 
