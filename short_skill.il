@@ -1,0 +1,36 @@
+
+axlCmdRegister("su", 'smooth_shape)
+defun(smooth_shape ()
+	axlShapeDynamicUpdate(nil,nil)
+)
+
+axlCmdRegister("suf", 'smooth_shape_force)
+defun(smooth_shape_force ()
+	axlShapeDynamicUpdate(nil,t)
+)
+
+axlCmdRegister("mkncpin", 'mark_unused_pin)
+defun(mark_unused_pin ()
+	axlDBDisplayControl('highlightColor, 4)
+	axlHighlightObject(axlDBDummyNet('pin), t)
+)
+
+axlCmdRegister("dc", 'shape_dynamicCopper, ?cmdType "sub_cmd")
+defun(shape_dynamicCopper ()
+	axlShell("options dyns_fill_type Dynamic copper")
+)
+
+axlCmdRegister("ss", 'shape_staticSolid, ?cmdType "sub_cmd")
+defun(shape_staticSolid ()
+	axlShell("options dyns_fill_type Static solid")
+)
+
+axlCmdRegister("db", 'db_check, ?cmdType "general")
+defun(db_check ()
+	axlShell("dbdoctor")
+	axlShell("FORM dbdoctor_allegro drc YES")
+	axlShell("FORM dbdoctor_allegro shapes YES")
+	axlShell("FORM dbdoctor_allegro xnets YES")
+	axlShell("FORM dbdoctor_allegro execute")
+	axlShell("FORM dbdoctor_allegro vlog")
+)
