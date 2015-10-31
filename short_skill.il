@@ -2,13 +2,13 @@
 axlCmdRegister("su", 'smooth_shape)
 defun(smooth_shape ()
 	axlShapeDynamicUpdate(nil, nil)
-	axlDBControl("dynamicFillMode", 'wysiwyg)
+	axlDBControl('dynamicFillMode, 'wysiwyg)
 )
 
 axlCmdRegister("suf", 'smooth_shape_force)
 defun(smooth_shape_force ()
 	axlShapeDynamicUpdate(nil, t)
-	axlDBControl("dynamicFillMode", 'wysiwyg)
+	axlDBControl('dynamicFillMode, 'wysiwyg)
 )
 
 axlCmdRegister("mkncpin", 'mark_unused_pin)
