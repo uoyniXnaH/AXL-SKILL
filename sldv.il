@@ -31,7 +31,7 @@ defun(sldv ()
 		p_rpt  = outfile(s_file)
 		
 		foreach(i lo_via
-			axlAddSelectBox(i->bBox)
+			axlAddSelectBox(sldv_iRec(i->xy i->bBox))
 			lo_sld = axlGetSelSet()
 			axlClearSelSet()
 			
@@ -64,6 +64,17 @@ defun(sldv ()
 		
 		axlWindowBoxSet(ll_winBox)
 	);let
+)
+
+;work out the inner square of a via(circle)
+defun(sldv_iRec (f_xy l_bBox)
+	prog((f_x f_y f_r f_delta)
+		f_x = car(f_xy)
+		f_y = cadr(f_xy)
+		f_r = (caadr(l_bBox)-caar(l_bBox)) * 0.5
+		f_delta = f_r / 1.41
+		return(list(list(f_x-f_delta f_y+f_delta) list(f_x+f_delta f_y-f_delta)))
+	)
 )
 
 
