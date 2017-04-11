@@ -7,7 +7,7 @@ My SKILL programs repository for Cadence Allegro.
 
 The Cadence SKILL is used to customize your design environment of Cadence Allegro, it is based on Lisp and supports a more conventional C-like syntax.
 
-For more infomation, just refer to sklanguser.pdf by Cadence.
+For more infomation, just refer to _sklanguser.pdf_ by Cadence.
 
 
 # ABOUT THIS REPOSITORY
