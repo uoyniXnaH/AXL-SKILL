@@ -36,37 +36,41 @@ And please note that some programs remain incompleted, because I'm lazy.
 * [wid](#wid)
 
 ## auto_drill_legend
-Complete the drill legend automatically. The characters of drills are alphabetically ordered, and figures are all cross(20x20).
+To complete the drill legend automatically. The characters of drills are alphabetically ordered, and figures are all cross(20x20).
 
 ## class_map
 This is a module that create a form with current class/subclass table. The color and vis-status are also real-time and changeable. Generally its function is close to one in the options bar. Cadence SKILL supports mapping class/subclass at the options bar, however form can not be utilized with such function, this module is developed for this.
   
 ## dvia
-Delete GND via by select.
+To delete GND via by select.
   
 ## package_out
-Export psm/dra/pad of selected symbols. Allegro can only export the whole library of a PCB file, this program is used as an complement.
+To export psm/dra/pad of selected symbols. Allegro can only export the whole library of a PCB file, this program is used as an complement.
   
 ## pad_count
-Count the amount of pads in a PCB file. Somtimes it may be useful.
+To count the amount of pads in a PCB file. Somtimes it may be useful.
 
 ## padline
-Change the width of linesegs to avoid exceeding connecting pins. This program is incompleted as it can be used only when a lineseg with enough length is connected to the pin vertically or horizontally. Well I do have considered the alogrithm for some more general conditions, but they are so complex that I suppose it's unwise to spend time as it's not an important work for me temporarily. Perhaps it won't be completed.
+To change the width of linesegs to avoid exceeding connecting pins. This program is incompleted as it can be used only when a lineseg with enough length is connected to the pin vertically or horizontally. Well I do have considered the alogrithm for some more general conditions, but they are so complex that I suppose it's unwise to spend time as it's not an important work for me temporarily. Perhaps it won't be completed.
 
 ## rpd
-Calculate length of lines in a match group with pin/via/stripe compensation. The outcome is static and it should be updated manually. (So far Cadence SKILL does not support dynamic triggers/events, except for certain operations.)
+To calculate length of nets in a match group with pins/vias/strips compensation. The outcome is static and it should be updated manually. (So far Cadence SKILL does not support dynamic triggers/events, except for certain operations.)
 
 ## same_via
-Highlight same type vias. This skill is out-of-date since allegro supports such function initially.
+To highlight same type vias. This skill is out-of-date since allegro supports such function initially.
 
 ## setGrid
+To modify grid settings. Both Etch and Non-etch grids will be modified. Note that this program is non-interactive, which means you can execute it freely during an interactive command.
 
 ## short_seg
+To find short linesegs in the board. Segments length can be defined (default is 2 mils), and segments close to vias and pins will be ignored.
 
 ## short_skill
+A collection of some short skills, they are short but useful.
 
 ## sldv
+To find if there are vias without soldermask on both layers. Misreports do exist thanks to Allegro's annoying selecting mechanism.
 
 ## wid
-
+To highlight/modify specific width of clines. Sometimes it is neccessary to confirm if there are elements out of process capability, such as clines with too thin width. With this program, you can find, highlight clines with specific width (>, < or =), and change their width by one click.
 
