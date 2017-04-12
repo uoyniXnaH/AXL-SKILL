@@ -45,10 +45,10 @@ This is a module that create a form with current class/subclass table. The color
 To delete GND via by select.
   
 ## package_out
-To export psm/dra/pad of selected symbols. Allegro can only export the whole library of a PCB file, this program is used as an complement.
+To export psm/dra/pad of selected symbols. Allegro can only export the whole library of a PCB file, this program is used as a complement.
   
 ## pad_count
-To count the amount of pads in a PCB file. Somtimes it may be useful.
+To count the amount of pads in a PCB file. This program is out-of-date since you can find the amount in the Summary Drawing Report, or you can count pins manually by select all of them.
 
 ## padline
 To change the width of linesegs to avoid exceeding connecting pins. This program is incompleted as it can be used only when a lineseg with enough length is connected to the pin vertically or horizontally. Well I do have considered the alogrithm for some more general conditions, but they are so complex that I suppose it's unwise to spend time as it's not an important work for me temporarily. Perhaps it won't be completed.
@@ -57,7 +57,7 @@ To change the width of linesegs to avoid exceeding connecting pins. This program
 To calculate length of nets in a match group with pins/vias/strips compensation. The outcome is static and it should be updated manually. (So far Cadence SKILL does not support dynamic triggers/events, except for certain operations.)
 
 ## same_via
-To highlight same type vias. This skill is out-of-date since allegro supports such function initially.
+To highlight same type vias. This skill program is out-of-date since allegro supports such function initially.
 
 ## setGrid
 To modify grid settings. Both Etch and Non-etch grids will be modified. Note that this program is non-interactive, which means you can execute it freely during an interactive command.
