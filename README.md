@@ -24,6 +24,7 @@ And please note that some programs remain incompleted, because I'm lazy.
 * [auto drill legend](#auto_drill_legend)
 * [class map](#class_map)
 * [dvia](#dvia)
+* [fc](#fc)
 * [package_out](#package_out)
 * [pad count](#pad_count)
 * [padline](#padline)
@@ -43,6 +44,9 @@ This is a module that create a form with current class/subclass table. The color
   
 ## dvia
 To delete GND via by select.
+
+## fc
+To modify pin's dynamic contacting type into FULL_CONTACT by selecting. This skill does not disable dynamic shape fill.
   
 ## package_out
 To export psm/dra/pad of selected symbols. Allegro can only export the whole library of a PCB file, this program is used as a complement.
