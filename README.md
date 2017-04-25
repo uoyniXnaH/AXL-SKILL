@@ -22,7 +22,7 @@ And please note that some programs remain incompleted, because I'm lazy.
 # CONTENTS
 
 * [auto drill legend](#auto_drill_legend)
-* [cell automaton](#cell_automaton)
+* [cellular automaton](#cellular_automaton)
 * [class map](#class_map)
 * [dvia](#dvia)
 * [fc](#fc)
@@ -40,8 +40,8 @@ And please note that some programs remain incompleted, because I'm lazy.
 ## auto_drill_legend
 To complete the drill legend automatically. The characters of drills are alphabetically ordered, and figures are all cross(20x20).
 
-## cell_automaton
-As its name, a program of cell automaton. This program is just for fun, no practical use in Allegro. It is a prototype that will execute automatically and stop after be saved(to set such a trigger is easy). The program will become slow when there are too much cells, because axlDeleteObject is slow.
+## cellular_automaton
+As its name, a program of cellular automaton. This program is just for fun, no practical use in Allegro. It is a prototype that will execute automatically and stop after be saved(to set such a trigger is easy). The program will become slow when there are too much cells, because axlDeleteObject is slow.
 
 ## class_map
 This is a module that create a form with current class/subclass table. The color and vis-status are also real-time and changeable. Generally its function is close to one in the options bar. Cadence SKILL supports mapping class/subclass at the options bar, however form can not be utilized with such function, this module is developed for this.
