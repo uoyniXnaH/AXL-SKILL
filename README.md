@@ -26,6 +26,7 @@ And please note that some programs remain incompleted, because I'm lazy.
 * [class map](#class_map)
 * [dvia](#dvia)
 * [fc](#fc)
+* [gvia](#gvia)
 * [package_out](#package_out)
 * [pad count](#pad_count)
 * [padline](#padline)
@@ -52,6 +53,9 @@ To delete GND via by select.
 ## fc
 To modify pin's dynamic contacting type into FULL_CONTACT by selecting. This skill does not disable dynamic shape fill.
   
+## gvia
+To change via net to GND by select.
+
 ## package_out
 To export psm/dra/pad of selected symbols. Allegro can only export the whole library of a PCB file, this program is used as a complement.
   
