@@ -15,7 +15,7 @@ defun(dvia ()
 			axlHighlightObject(axlGetSelSet())
 			all = axlGetSelSet()
 			foreach(i all
-				when(i->net->name == "GND" axlDeleteObject(i))
+				when(or(i->net->name == "GND" i->net->name == "" !i->net) axlDeleteObject(i))
 			);foreach
 		);while
 		
