@@ -1,3 +1,6 @@
+This repository will not be updated anymore.
+2017/10/9
+
 # AXL-SKILL
 
 My SKILL programs repository for Cadence Allegro.
